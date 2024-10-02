@@ -9,6 +9,7 @@
           height: 100%;
           margin: 0;
           scroll-behavior: smooth;
+          
 
          
       }
@@ -19,6 +20,31 @@
          
 
       }
+      @keyframes ringRotate {
+        0% {
+          transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);
+        }
+      
+        100% {
+          transform: rotateZ(-360deg) rotateY(-360deg) rotateX(-360deg);
+        }
+      }
+      
+      firefly {
+        z-index: 5;
+        position: absolute;
+        background: yellow;
+        left: 0;
+        border-radius: 100%;
+        pointer-events: none;
+        top: 0;
+        transform-style: preserve-3d;
+        opacity: 0;
+        box-shadow: 5px 5px 44px rgba(100, 155, 200, 1);
+      }
+      
+      
+    
       .chevron {
 position: absolute;
 width: 28px;
@@ -228,9 +254,7 @@ to {
 
   body {
       font-family: Averia Serif Libre;
-background-image: url("finalforest2.png");
-          background-attachment: fixed;
-     
+      background-image: url("images/finalforest2.png");
     
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -474,7 +498,7 @@ margin-bottom: 0.1em;
     height: 600px; 
     background-color: yellow;
     z-index: 10;
-    margin-left: 485px;
+    margin-left: 510px;
   
   
     margin-top: 100px;
@@ -511,14 +535,14 @@ margin-bottom: 0.1em;
 .dot-container {
     display: grid;
     grid-template-columns: repeat(10, 25px); 
-    grid-gap: 16px; 
+    grid-gap: 14px; 
     width: fit-content;
     padding: 20px;
    
     z-index: 10;
     
     margin-left: 700px; 
-    margin-top: 102px;
+    margin-top: 85px;
     position: absolute;
     
   }
@@ -539,7 +563,7 @@ margin-bottom: 0.1em;
 
     font-size: 75px;
     color: white;
-    margin-left: 280px;
+    margin-left: 300px;
     
     margin-top: 710px;
     
@@ -574,7 +598,9 @@ margin-bottom: 0.1em;
    
 
   }
+  
   .titles{
+
     font-size: 55px;
     color: white;
 
@@ -585,6 +611,112 @@ margin-bottom: 0.1em;
     width: 150px;
     height: 140px;
   }
+  @media (max-width:320px){
+    .titles{
+      font-size: 24.27px;
+    }
+    .maintext{
+      font-size: 15px;
+     
+
+    }
+    .secondintro{
+      padding-left: 15px;
+    }
+    .textbox{
+      width:230px;
+      padding-right: 0px;
+    }
+    .engimages{
+      margin-right: 200px;
+      padding-right: 380px;
+      padding-left: 0px;
+      padding-top: 250px;
+      width: 100px;
+      height: 90px;
+      
+    }
+    .abouttext {
+      font-size: 15px;
+      color: white;
+      line-height: 1; 
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .aboutme{
+      font-size: 30px;
+      color: white;
+      width: 53px;
+      
+  }
+  .personalpro{
+
+    font-size: 30px;
+    color: white;
+    margin-left: 0px;
+    width: 50px;
+    
+    margin-top: 500px;
+    margin-bottom: 50px;
+    
+
+  }
+  .vertical-line{
+    margin-left: 85px;
+
+  }
+  .vertical-line2 {
+    width: 1.5px;
+    height: 400px; 
+    background-color: yellow;
+    z-index: 10;
+    margin-left: 85px;
+  
+  
+    margin-top: 50px;
+    transition: height 0.3s ease-out; 
+
+  }
+  .introsection{
+    font-size: 30px;
+    padding-left: 10px;
+
+  }
+  .finaltop{
+    font-size: 30px;
+    padding-left: 0px;
+  }
+  .secondintro{
+    width:240px;
+  }
+  .highlight{
+    font-size: 40px;
+  }
+  .projectsection{
+  
+    display: grid;
+    grid-template-rows: repeat(2, 2);
+    grid-row-gap: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+
+  }
+  .image1{
+    margin-bottom: 0px;
+
+  }
+  .image2{
+
+  }
+  
+   
+
+    
+  }
+
+
+  
   
   
 
