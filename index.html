@@ -83,7 +83,7 @@
             </div>
 
         
-            <img class="profile" src="Screenshot 2024-08-13 at 5.17.13 PM.png">
+            <img class="profile" src="images/Screenshot 2024-08-13 at 5.17.13 PM.png">
             
         
             <div class="vertical-line"></div>
@@ -215,13 +215,13 @@
 
                 <div class="textbox">
                   <h1>
-                    <span class="titles">Combat Robotics</span> 
+                    <span class="titles">Combat Robotics</span>  <br>
                     
+                   <span class="maintext">
+                      I led a combat robotics team at ASU, where my team was responsible for designing and creating the blueprint in CAD,
+                      sourcing and machining specific parts, and handling the wiring and programming of the final product.
+                  </span>
                    
-                    I led a combat robotics team at ASU, where my team was responsible for designing and creating the blueprint in CAD,
-                    sourcing and machining specific parts, and handling the wiring and programming of the final product.
-
-                   
 
                   </h1>
 
@@ -229,47 +229,54 @@
                 </div>
 
 
-                <div class="textbox">
+                <span class="image1">
                   <h1>
+
                   
-                    <img class="engimages" src="Screenshot 2024-09-12 at 11.49.08 PM.png">
-            
+                  
+                        <img class="engimages" src="images/Screenshot 2024-09-12 at 11.49.08 PM.png">
                     
                     
                   </h1>
+                </span>
 
                   
-                </div>
-
-
-
-                <div class="textbox">
-
-                  <h1>
-                    
-                    <span class="titles">Drone Devils           </span> 
-                    I was a team member of the Drone Devils club. This involved learning how to build, test, recalibrate, and repair
-                    various different drones.
-                  
-                     
-                    
-                  </h1>
-
-
-                </div>
+               
 
 
 
                 <div class="textbox">
+
                   <h1>
-                   
-                    <img class="engimages" src="Screenshot 2024-09-13 at 12.15.15 AM.png">
+                    
+                    <span class="titles">Drone Devils           </span> <br>
+                    <span class="maintext">
+                      I was a team member of the Drone Devils club. This involved learning how to build, test, recalibrate, and repair
+                      various different drones.
+                    </span>
+                  
+                    
                     
                   </h1>
-                 
-                 
+
 
                 </div>
+
+
+
+                <span class="image2">
+                  <h1>
+                    
+                  
+                      <img class="engimages" src="images/Screenshot 2024-09-13 at 12.15.15 AM.png">
+                  
+                    
+                  </h1>
+                </span>
+                
+                
+
+                
               </div>
 
 
@@ -300,7 +307,7 @@
     </section>
   </div>
   <div class="image-container">
-    <img src="bbranch.png" alt="image">
+    <img src="images/bbranch.png" alt="image">
   </div>
 </div>
 
@@ -372,6 +379,72 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
+  console.clear();
+let am = 22;
+let ptext = document.querySelector(".p-text");
+
+document.addEventListener("click", (e) => {
+  let xx = e.pageX;
+  let yy = e.pageY;
+
+  for (let i = 0; i < am; i++) {
+    createCircles(xx, yy, i);
+  }
+});
+
+function createCircles(x, y, tuSam) {
+  let firefly = document.createElement("firefly");
+
+  document.body.appendChild(firefly);
+
+  let size = Math.floor(Math.random() * 15);
+
+  firefly.style.width = `${size}px`;
+  firefly.style.height = `${size}px`;
+
+  let destinationX = x + (Math.random() - 0.5) * tuSam * 20;
+  let destinationY = y + (Math.random() - 0.5) * tuSam * 20;
+
+  let roate = (Math.random() + 1) * tuSam * 20;
+
+  let animation = firefly.animate(
+    [
+      {
+        transform: `translate3d(${x - tuSam}px, ${y - tuSam}px, 0)`,
+        opacity: 1,
+        filter: `hue-rotate(${0}deg`
+      },
+      {
+        transform: `translate3d(${destinationX - size}px, ${
+          destinationY - size
+        }px, 0) rotateZ(${roate}deg)  translateX(${tuSam}px)`,
+        opacity: 0.5
+        // filter: `hue-rotate(${160}deg`
+      },
+      {
+        transform: `translate3d(${destinationX}px, ${destinationY}px, 0) rotateZ(${roate}deg)  translateX(${
+          tuSam * 30
+        }px)`,
+        opacity: 0
+        //filter: `hue-rotate(${60}deg`
+      }
+    ],
+    {
+      duration: 10 + Math.random() * 4000,
+      easing: "ease-out",
+
+      delay: Math.random() * 200
+    }
+  );
+
+  animation.onfinish = () => {
+    firefly.remove();
+  };
+}
+
+
+</script>
+<script>
     window.addEventListener("load", () => {
       gsap.registerPlugin(ScrollTrigger);
   
@@ -409,6 +482,7 @@
   </script>
   
 <script>
+  
     
 
     
