@@ -607,39 +607,50 @@ margin-bottom: 0.1em;
     width: 150px;
     height: 140px;
   }
-  .mynav ul {
+  .mynav {
+    position: fixed; /* This keeps the menu at the top */
+    top: 0; /* Aligns it to the top of the viewport */
+    left: 0; /* Aligns it to the left edge */
+    right: 0; /* Makes it stretch to the right edge */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000; /* Ensures it stays above other content */
+    padding: 10px 0; /* Adds some padding for better spacing */
+}
+
+.mynav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
-  }
-  
-  .mynav li:not(:last-child) {
+    margin: 0; /* Ensure no margin for the ul */
+}
+
+.mynav li:not(:last-child) {
     margin-right: 20px;
-  }
-  
-  .mynav a {
+}
+
+.mynav a {
     z-index: 100;
     display: block;
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 7px 15px;
-  }
-  
-  .target {
-    color:yellow;
+}
+
+.target {
     position: absolute;
     border-bottom: 4px solid transparent;
     z-index: 100;
     transform: translateX(-60px);
-  }
-  
-  .mynav a,
-  .target {
+}
+
+.mynav a,
+.target {
     transition: all .35s ease-in-out;
-  }
+}
+ 
   
 
   @media (max-width: 480px){
