@@ -650,6 +650,60 @@ margin-bottom: 0.1em;
 .target {
     transition: all .35s ease-in-out;
 }
+.dotnav-horizontal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: black; /* Semi-transparent background */
+  z-index: 999;
+}
+
+.dotnav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dotnav > li {
+  margin: 0 15px;
+}
+
+.dotnav > li > a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  text-indent: -999%;
+  background-color: transparent;
+}
+
+.dotnav > li > a:hover,
+.dotnav > li > a:focus {
+  background-color: yellow;
+}
+
+.dotnav > li.active > a {
+  background-color: yellow;
+}
+
+.awesome-tooltip + .tooltip > .tooltip-inner {
+  background-color: yellow;
+  color: #fff;
+  border: 1px solid yellow;
+}
+
+.awesome-tooltip + .tooltip.left > .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid yellow;
+}
 
  
   

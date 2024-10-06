@@ -11,19 +11,24 @@
   </style>
 </head>
 <body>
-  <nav class="mynav">
-    <ul>
-      <li><a href="">About</a></li>
-      <li><a href="">Experience</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
-      <li><a href="">Clients</a></li>
-      <li><a href="">Contact</a></li>
+
+  <nav id="mainnav" class="">
+    <ul class="dotnav dotnav-horizontal">
+        <li class="awesome-tooltip" title="Home"><a href="#home"></a></li>
+        <li class="awesome-tooltip" title="About"><a href="#about"></a></li>
+        <li class="awesome-tooltip" title="Skills"><a href="#skills"></a></li>
+        <li class="awesome-tooltip" title="Projects"><a href="#projects"></a></li>
+        <li class="awesome-tooltip" title="Contact"><a href="#contact"></a></li>        
     </ul>
-  </nav>
-  
-  
-  <span class="target"></span>
+</nav>
+
+<section id="home"></section>
+<section id="about"></section>
+<section id="skills"></section>
+<section id="projects"></section>
+<section id="contact"></section>
+ 
+
     <div class="dark-overlay"></div>
     <div class="firefly"></div>
     <div class="firefly"></div>
@@ -554,7 +559,36 @@ window.addEventListener("resize", resizeFunc);
   
 <script>
   
-    
+  $(document).ready(function() {
+    // Smooth scrolling for click events
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 500);
+                return false;
+            }
+        }
+    });
+
+    // Change active class based on scroll position
+    $(window).on('scroll', function() {
+        var scrollPos = $(document).scrollTop();
+        $('section').each(function() {
+            var currLink = $('a[href="#' + this.id + '"]');
+            var refElement = $(this);
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('.dotnav li').removeClass("active");
+                currLink.parent().addClass("active");
+            } else {
+                currLink.parent().removeClass("active");
+            }
+        });
+    });
+});
 
     
     
