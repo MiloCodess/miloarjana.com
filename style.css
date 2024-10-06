@@ -612,7 +612,7 @@ margin-bottom: 0.1em;
     top: 0; /* Aligns it to the top of the viewport */
     left: 0; /* Aligns it to the left edge */
     right: 0; /* Makes it stretch to the right edge */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: black; /* Semi-transparent background */
     z-index: 99; /* Ensures it stays above other content */
     padding: 10px 0; /* Adds some padding for better spacing */
 }
@@ -650,6 +650,7 @@ margin-bottom: 0.1em;
 .target {
     transition: all .35s ease-in-out;
 }
+
  
   
 
