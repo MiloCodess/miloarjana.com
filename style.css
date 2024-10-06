@@ -602,10 +602,28 @@ margin-bottom: 0.1em;
   }
   .engimages{
     padding-left: 80px;
+
     padding-top: 62px;
     width: 150px;
     height: 140px;
   }
+  @media (max-width: 500px){
+    body {
+          font-family: Averia Serif Libre;
+          background-image: url("finalforest2.png");
+        
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          position: relative;
+              font-weight: 400;
+              font-style: normal;
+            
+              font-size: 22px;
+    }
+  
+  }
+
   @media (max-width: 480px){
     .titles{
       font-size: 30px;
