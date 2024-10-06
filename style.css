@@ -607,22 +607,40 @@ margin-bottom: 0.1em;
     width: 150px;
     height: 140px;
   }
-  @media (max-width: 500px){
-    body {
-          font-family: Averia Serif Libre;
-          background-image: url("finalforest2.png");
-        
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-          position: relative;
-              font-weight: 400;
-              font-style: normal;
-            
-              font-size: 22px;
-    }
-  
+  .mynav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
   }
+  
+  .mynav li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .mynav a {
+    z-index: 100;
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+  }
+  
+  .target {
+    color:yellow;
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: 100;
+    transform: translateX(-60px);
+  }
+  
+  .mynav a,
+  .target {
+    transition: all .35s ease-in-out;
+  }
+  
 
   @media (max-width: 480px){
     .titles{
