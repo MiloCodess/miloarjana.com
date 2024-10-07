@@ -14,20 +14,20 @@
 
   <nav id="mainnav" class="">
     <ul class="dotnav dotnav-horizontal">
-        <li class="awesome-tooltip" title="Home"><a href="#home"></a></li>
+        <li class="awesome-tooltip" title="Intro"><a href="#intro"></a></li>
         <li class="awesome-tooltip" title="About"><a href="#about"></a></li>
         <li class="awesome-tooltip" title="Skills"><a href="#skills"></a></li>
         <li class="awesome-tooltip" title="Projects"><a href="#projects"></a></li>
-        <li class="awesome-tooltip" title="Contact"><a href="#contact"></a></li>        
+        <li class="awesome-tooltip" title="Contact"><a href="#contact"></a></li>
     </ul>
 </nav>
 
-<section id="home"></section>
+<!-- Sections -->
+<section id="intro"></section>
 <section id="about"></section>
 <section id="skills"></section>
 <section id="projects"></section>
 <section id="contact"></section>
- 
 
     <div class="dark-overlay"></div>
     <div class="firefly"></div>
@@ -574,7 +574,7 @@ window.addEventListener("resize", resizeFunc);
         }
     });
 
-    // Change active class based on scroll position
+    // Update active dot based on scroll position
     $(window).on('scroll', function() {
         var scrollPos = $(document).scrollTop();
         $('section').each(function() {
