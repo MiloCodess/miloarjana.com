@@ -572,6 +572,7 @@ margin-bottom: 0.1em;
     margin-left: auto;
     margin-right: auto;
     margin-top: -50px;
+    margin-botttom: 300px;
  
 
     
@@ -1009,6 +1010,14 @@ margin-bottom: 0.1em;
   }
   .image2{
 
+  }
+  .third_vertical{
+    width: 1.5px;
+    height: 400px; 
+    background-color: yellow;
+    z-index: 10;
+    margin-left: 15px;
+  
   }
   
   
