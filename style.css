@@ -617,6 +617,14 @@ margin-bottom: 0.1em;
     z-index: 99; /* Ensures it stays above other content */
     padding: 10px 0; /* Adds some padding for better spacing */
 }
+.avidclass{
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Ensure no margin for the ul */
+}
 
 .mynav ul {
     display: flex;
