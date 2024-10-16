@@ -617,9 +617,7 @@ margin-bottom: 0.1em;
     z-index: 99; /* Ensures it stays above other content */
     padding: 10px 0; /* Adds some padding for better spacing */
 }
-.classer{
-  
-}
+
 .avidclass{
   display: flex;
     justify-content: center;
@@ -1035,6 +1033,9 @@ margin-bottom: 0.1em;
   
    
 
+    
+  }
+  @media(max-width: 240px){
     
   }
 
