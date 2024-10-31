@@ -723,17 +723,17 @@ margin-bottom: 0.1em;
 
   @media (max-width: 560){
     .titles{
-      font-size: 30px;
+      font-size: 40px;
     }
 
 
     .maintext{
-      font-size: 15px;
+      font-size: 25px;
      
 
     }
     .secondintro{
-      padding-left: 15px;
+      padding-left: 25px;
     }
     .textbox{
       width:250px;
@@ -749,21 +749,21 @@ margin-bottom: 0.1em;
       
     }
     .abouttext {
-      font-size: 20px;
+      font-size: 30px;
       color: white;
       line-height: 1; 
       margin-top: 0;
       margin-bottom: 0;
   }
   .aboutme{
-      font-size: 40px;
+      font-size: 50px;
       color: white;
       width: 100px;
       
   }
   .personalpro{
 
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     margin-left: 0px;
     width: 90px;
@@ -790,19 +790,19 @@ margin-bottom: 0.1em;
 
   }
   .introsection{
-    font-size: 50px;
+    font-size: 60px;
     padding-left: 10px;
 
   }
   .finaltop{
-    font-size: 40px;
+    font-size: 50px;
     padding-left: 0px;
   }
   .secondintro{
     width:300px;
   }
   .highlight{
-    font-size: 40px;
+    font-size: 50px;
   }
   .projectsection{
   
