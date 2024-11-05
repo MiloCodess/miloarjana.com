@@ -10,10 +10,7 @@
  
   </style>
 </head>
-
-
-<body>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,19 +20,19 @@
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
         body {
-            background-color: black;
+            background-color: white;
             overflow: hidden;
         }
 
-        h1 {
-            position: absolute;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 12px;
-            text-transform: uppercase;
-            left: 50%;
-            top: 58%;
-            margin-left: -20px;
+        
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: -1; /* Ensures it sits behind the loading animation */
         }
 
         .changer {
@@ -327,6 +324,7 @@
 </head>
 <body>
     <div class="loading-container">
+        <div class="background"></div>
         <div class="body">
             <span>
                 <span></span>
@@ -352,6 +350,7 @@
 </body>
 </html>
 
+<body>
 
   <nav id="mainnav" class="">
     <ul class="dotnav dotnav-horizontal">
