@@ -718,6 +718,17 @@ margin-bottom: 0.1em;
  border-bottom: 5px solid transparent;
  border-left: 5px solid yellow;
 }
+.preloader-h1 {
+  color: yellow;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  left: 50%;
+  top: 58%;
+  margin-left: -20px;
+}
 
 
  
