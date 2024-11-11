@@ -623,30 +623,7 @@ margin-bottom: 0.1em;
 
 
 
-.mynav a,
-.target {
-   transition: all .35s ease-in-out;
-}
-.dotnav-horizontal {
- display: flex;
- justify-content: center;
- position: fixed;
- top: 0;
- width: 100%;
- padding: 10px 0;
- background-color: black; /* Semi-transparent background */
- z-index: 999;
-}
 
-.dotnav {
- list-style: none;
- padding: 0;
- margin: 0;
-}
-
-.dotnav > li {
- margin: 0 15px;
-}
 
 .dotnav > li > a {
  display: inline-block;
@@ -694,7 +671,13 @@ margin-bottom: 0.1em;
 }
 
 
- 
+/*
+  media queries for different device size requirments, small phone, 
+  tablets, ipads, computers, desktops 
+
+
+
+*/
 
  @media (max-width: 560){
    .titles{
