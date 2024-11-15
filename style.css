@@ -573,7 +573,7 @@ margin-bottom: 0.1em;
    margin-left: auto;
    margin-right: auto;
    margin-top: -50px;
-   margin-botttom: 300px;
+   margin-bottom: 300px;
 
 
    
@@ -670,6 +670,20 @@ margin-bottom: 0.1em;
   margin-left: -20px;
 }
 
+.vertical-line3 {
+  width: 1.5px;
+  height: 600px; 
+  background-color: yellow;
+  z-index: 10;
+  margin-left: 510px;
+
+
+  margin-top: 100px;
+  transition: height 0.3s ease-out; 
+
+}
+
+
 
 /*
   media queries for different device size requirments, small phone, 
@@ -737,7 +751,7 @@ margin-bottom: 0.1em;
  }
  .vertical-line2 {
    width: 1.5px;
-   height: 400px; 
+   height: 100px; 
    background-color: yellow;
    z-index: 10;
    margin-left: 85px;
@@ -777,8 +791,10 @@ margin-bottom: 0.1em;
 
  }
  .image2{
+  height: auto;
 
  }
+ 
 
  }
 
@@ -1083,14 +1099,7 @@ margin-bottom: 0.1em;
  .image2{
 
  }
- .third_vertical{
-   width: 1.5px;
-   height: 400px; 
-   background-color: yellow;
-   z-index: 10;
-   margin-left: 15px;
  
- }
  
  
  
@@ -1154,14 +1163,14 @@ margin-bottom: 0.1em;
  }
  .vertical-line2 {
    width: 1.5px;
-   height: 400px; 
+   height: 10px; 
    background-color: yellow;
    z-index: 10;
    margin-left: 85px;
  
  
    margin-top: 50px;
-   transition: height 0.3s ease-out; 
+   
 
  }
  .introsection{
@@ -1196,18 +1205,12 @@ margin-bottom: 0.1em;
  .image2{
 
  }
- .third_vertical{
-   width: 1.5px;
-   height: 400px; 
-   background-color: yellow;
-   z-index: 10;
-   margin-left: 15px;
  
- }
  
  
    
  }
+
 
 
  
