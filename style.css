@@ -444,6 +444,7 @@ to {
  display: flex;
  flex-direction: column;
  padding-left: 50px;
+ padding-bottom: 400px;
  width: 700px;
 
 }
@@ -500,6 +501,9 @@ margin-bottom: 0.1em;
    margin-top: 100px;
    transition: height 0.3s ease-out; 
 
+ }
+ .vertical-line3{
+  
  }
 .horizontal-line {
    width: 1088px;
