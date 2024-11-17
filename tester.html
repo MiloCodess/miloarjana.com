@@ -9,7 +9,9 @@
   box-sizing: border-box;
 }
 
-coveraddt {
+
+
+body {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -24,6 +26,22 @@ coveraddt {
   overflow-x: hidden;
 }
 
+imageclasser{
+  
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  font: normal normal 400 12pt / 2cap "Golos Text", sans-serif;
+  color: white;
+  overflow-x: hidden;
+    
+}
 
 article {
   width: 100%;
@@ -150,7 +168,7 @@ button:has(input:checked) label span:last-of-type {
   display: initial;
 }
 
-section {
+sectiontweaked {
   width: 100%;
   height: 0;
   display: flex;
@@ -164,7 +182,7 @@ section {
   position: relative;
 }
 
-section::before {
+sectiontweaked::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -190,12 +208,12 @@ section::before {
   transition: all 1.2s ease;
 }
 
-figure:has(button input:checked) ~ section::before {
+figure:has(button input:checked) ~ sectiontweaked::before {
   width: 0px;
   transition: all 1.2s ease;
 }
 
-div {
+divfinder {
   flex-grow: 1;
   opacity: 0;
   background-size: cover;
@@ -205,115 +223,115 @@ div {
   transition: all 0.4s ease;
 }
 
-figure:has(button input:checked) ~ section {
+figure:has(button input:checked) ~ sectiontweaked {
   height: 220px;
   transition: all 0.5s ease;
 }
 
-figure:has(button input:checked) ~ section div,
+figure:has(button input:checked) ~ sectiontweaked divfinder,
 figure:has(button input:checked)
-  ~ section
-  div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div {
+  ~ sectiontweaked
+  divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder {
   opacity: 1;
   flex-grow: 2;
   transition-delay: 0.15s;
 }
 
-figure:has(button input:checked) ~ section div + div,
+figure:has(button input:checked) ~ sectiontweaked divfinder + divfinder,
 figure:has(button input:checked)
-  ~ section
-  div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div {
+  ~ sectiontweaked
+  divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder {
   opacity: 1;
   transition-delay: 0.3s;
   flex-grow: 3;
 }
 
-figure:has(button input:checked) ~ section div + div + div,
+figure:has(button input:checked) ~ sectiontweaked divfinder + divfinder + divfinder,
 figure:has(button input:checked)
-  ~ section
-  div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div {
+  ~ sectiontweaked
+  divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder {
   opacity: 1;
   transition-delay: 0.45s;
   flex-grow: 4;
 }
 
-figure:has(button input:checked) ~ section div + div + div + div,
+figure:has(button input:checked) ~ sectiontweaked divfinder + divfinder + divfinder + divfinder,
 figure:has(button input:checked)
-  ~ section
-  div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div {
+  ~ sectiontweaked
+  divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder {
   opacity: 1;
   transition-delay: 0.6s;
   flex-grow: 5;
 }
 
-figure:has(button input:checked) ~ section div + div + div + div + div,
+figure:has(button input:checked) ~ sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder,
 figure:has(button input:checked)
-  ~ section
-  div
-  + div
-  + div
-  + div
-  + div
-  + div
-  + div {
+  ~ sectiontweaked
+  divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder
+  + divfinder {
   opacity: 1;
   transition-delay: 0.75s;
   flex-grow: 6;
 }
 
-figure:has(button input:checked) ~ section div + div + div + div + div + div {
+figure:has(button input:checked) ~ sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
   opacity: 1;
   transition-delay: 0.9s;
   flex-grow: 7;
 }
 
-section div:hover {
+sectiontweaked divfinder:hover {
   flex-grow: 2 !important;
 }
 
-section:has(div:hover) div:not(:hover) {
+sectiontweaked:has(divfinder:hover) divfinder:not(:hover) {
   flex-grow: 1 !important;
 }
 
-section:has(div:hover) div {
+sectiontweaked:has(divfinder:hover) divfinder {
   transition-delay: 0s !important;
 }
 
-figure:has(button input:checked) ~ section div {
+figure:has(button input:checked) ~ sectiontweaked divfinder {
   animation: pointerFix 1.7s linear 0s 1 normal;
 }
 
@@ -331,47 +349,47 @@ figure:has(button input:checked) ~ section div {
 
 /* Change Gallery Images */
 
-section div:first-of-type {
+sectiontweaked divfinder:first-of-type {
   background-image: url("https://picsum.photos/id/337/500/500");
 }
 
-section div + div {
+sectiontweaked divfinder + divfinder {
   background-image: url("https://picsum.photos/id/515/500/500");
 }
 
-section div + div + div {
+sectiontweaked divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/424/500/500");
 }
 
-section div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/849/500/500");
 }
 
-section div + div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/476/500/500");
 }
 
-section div + div + div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/57/500/500");
 }
 
-section div + div + div + div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/82/500/500");
 }
 
-section div + div + div + div + div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/680/500/500");
 }
 
-section div + div + div + div + div + div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/553/500/500");
 }
 
-section div + div + div + div + div + div + div + div + div + div {
+sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
   background-image: url("https://picsum.photos/id/193/500/500");
 }
 
-section div:last-of-type {
+sectiontweaked divfinder:last-of-type {
   background-image: url("https://picsum.photos/id/565/500/500");
 }
 
@@ -405,10 +423,10 @@ section div:last-of-type {
 }
 
 @media (max-width: 600px) {
-  section {
+  sectiontweaked {
     flex-direction: column;
   }
-  figure:has(button input:checked) ~ section {
+  figure:has(button input:checked) ~ sectiontweaked {
     height: 1000px;
   }
 }
@@ -421,119 +439,103 @@ section div:last-of-type {
         
 
     
-<coveraddt>
 
-<<<<<<< HEAD
 </body>
-<article>
-  <figure>
-    <figcaption>
-      <h1>Culinary</h1>
-      <p>
-        Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
-      </p>
-    </figcaption>
-    <button>
-      <label for="init1">
-        <span>Click me</span>
-        <span>Collapse</span>
-      </label>
-      <input type="checkbox" name="init" id="init1">
-    </button>
-  </figure>
-  <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
-</article>
+<divfinder class="openout"></divfinder>
+    <divfinder class="imageclasser">   </divfinder>
+            <article>
+              <figure>
+                <figcaption>
+                  <h1>Electronics</h1>
+                  <p>
+                    Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
+                  </p>
+                </figcaption>
+                <button>
+                  <label for="init1">
+                    <span>Projects</span>
+                    <span>Collapse</span>
+                  </label>
+                  <input type="checkbox" name="init" id="init1">
+                </button>
+              </figure>
+              <sectiontweaked>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+              </sectiontweaked>
+            </article>
 
-<article>
-  <figure>
-    <figcaption>
-      <h1>Culinary</h1>
-      <p>
-        Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
-      </p>
-    </figcaption>
-    <button>
-      <label for="init2">
-        <span>Click me</span>
-        <span>Collapse</span>
-      </label>
-      <input type="checkbox" name="init" id="init2">
-    </button>
-  </figure>
-  <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
-</article>
+            <article>
+              <figure>
+                <figcaption>
+                  <h1>Culinary</h1>
+                  <p>
+                    Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
+                  </p>
+                </figcaption>
+                <button>
+                  <label for="init2">
+                    <span>Dishes</span>
+                    <span>Collapse</span>
+                  </label>
+                  <input type="checkbox" name="init" id="init2">
+                </button>
+              </figure>
+              <sectiontweaked>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+              </sectiontweaked>
+            </article>
+            <article>
+              <figure>
+                <figcaption>
+                  <h1>Art</h1>
+                  <p>
+                    Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
+                  </p>
+                </figcaption>
+                <button>
+                  <label for="init3">
+                    <span>Drawings</span>
+                    <span>Collapse</span>
+                  </label>
+                  <input type="checkbox" name="init" id="init3">
+                </button>
+              </figure>
+              <sectiontweaked>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+                <divfinder></divfinder>
+              </sectiontweaked>
+            </article>
+    </divfinder>
+</divfinder>
+
 
 </html>
-=======
-
-    <article>
-        <figure>
-          <figcaption>
-            <h1>
-              Culinary
-            </h1>
-            <p>
-              Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
-            </p>
-          </figcaption>
-          </figcaption>
-          <button>
-            <label for="init">
-              <span>Click me</span>
-              <span>Collapse</span>
-            </label>
-            <input type="checkbox" name="init" id="init">
-          </button>
-        </figure>
-        <section>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-          <div>
-          </div>
-        </section>
-      </article>
-    </html>
-</coveraddt>
->>>>>>> 3d0ee3b61f86a9524a58d2930adfad151f95d5e8
