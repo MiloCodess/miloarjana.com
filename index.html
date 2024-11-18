@@ -23,11 +23,8 @@
             background-color: white;
             overflow: hidden;
         }
-        
 
-imageclasser{
-  
-  
+imageclasser {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -37,17 +34,14 @@ imageclasser{
   width: 100vw;
   min-height: 100vh;
   background-color: black;
- 
+  font: normal normal 400 12pt / 2cap "Golos Text", sans-serif;
   color: white;
   overflow-x: hidden;
-    
 }
 
 article {
-  
-  padding-left: 50px;
-  margin-left: -20px;
-  width: 91%;
+  padding-left: 20px;
+  width: 100%;
   max-width: 1265px;
   display: flex;
   flex-direction: column;
@@ -63,7 +57,6 @@ figure {
   align-items: flex-end;
   justify-content: space-between;
   margin: 0 0 30px 0;
-  
 }
 
 figure figcaption {
@@ -76,8 +69,8 @@ figure figcaption {
 }
 
 figure figcaption h1 {
-  color:yellow;
-  font: normal normal 400 240% / 1.5cap "Averia Serif Libre", serif;
+  color: yellow;
+  font: normal normal 400 240% / 1.5cap "Della Respira", serif;
   padding: 0 0 10px 0;
   margin: 0 0 20px 0;
   border-bottom: 1px solid yellow;
@@ -106,7 +99,6 @@ figure figcaption p span:last-of-type {
 }
 
 button {
-  padding-right: 20px;
   font: normal normal 400 12pt / 2cap "Golos Text", sans-serif;
   width: 200px;
   height: 50px;
@@ -225,16 +217,6 @@ divfinder {
   background-repeat: no-repeat;
   background-attachment: scroll;
   transition: all 0.4s ease;
-}
-divfinder2{
-  flex-grow: 1;
-  opacity: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  transition: all 0.4s ease;
-
 }
 
 figure:has(button input:checked) ~ sectiontweaked {
@@ -363,48 +345,139 @@ figure:has(button input:checked) ~ sectiontweaked divfinder {
 
 /* Change Gallery Images */
 
-sectiontweaked divfinder:first-of-type {
-  background-image: url("../sushi.jpg");
+/* Electronics Section Images */
+#electronics sectiontweaked divfinder:nth-of-type(1) {
+  background-image: url("https://picsum.photos/id/337/500/500");
 }
 
-sectiontweaked divfinder + divfinder {
-  background-image: url("../curry2.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(2) {
+  background-image: url("https://picsum.photos/id/515/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder {
-  background-image: url("../orange.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(3) {
+  background-image: url("https://picsum.photos/id/424/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../rendang.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(4) {
+  background-image: url("https://picsum.photos/id/849/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../board.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(5) {
+  background-image: url("https://picsum.photos/id/476/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../teriyaki.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(6) {
+  background-image: url("https://picsum.photos/id/57/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../curry.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(7) {
+  background-image: url("https://picsum.photos/id/82/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../steak.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(8) {
+  background-image: url("https://picsum.photos/id/680/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../salmons.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(9) {
+  background-image: url("https://picsum.photos/id/553/500/500");
 }
 
-sectiontweaked divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder + divfinder {
-  background-image: url("../fish.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(10) {
+  background-image: url("https://picsum.photos/id/193/500/500");
 }
 
-sectiontweaked divfinder:last-of-type {
-  background-image: url("../steaker.jpg");
+#electronics sectiontweaked divfinder:nth-of-type(11) {
+  background-image: url("https://picsum.photos/id/565/500/500");
+}
+
+/* Culinary Section Images */
+#culinary sectiontweaked divfinder:nth-of-type(1) {
+  background-image: url("https://picsum.photos/id/1011/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(2) {
+  background-image: url("https://picsum.photos/id/1012/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(3) {
+  background-image: url("https://picsum.photos/id/1013/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(4) {
+  background-image: url("https://picsum.photos/id/1014/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(5) {
+  background-image: url("https://picsum.photos/id/1015/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(6) {
+  background-image: url("https://picsum.photos/id/1016/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(7) {
+  background-image: url("https://picsum.photos/id/1017/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(8) {
+  background-image: url("https://picsum.photos/id/1018/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(9) {
+  background-image: url("https://picsum.photos/id/1019/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(10) {
+  background-image: url("https://picsum.photos/id/1020/500/500");
+}
+
+#culinary sectiontweaked divfinder:nth-of-type(11) {
+  background-image: url("https://picsum.photos/id/1021/500/500");
+}
+
+/* Art Section Images */
+#art sectiontweaked divfinder:nth-of-type(1) {
+  background-image: url("https://picsum.photos/id/200/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(2) {
+  background-image: url("https://picsum.photos/id/201/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(3) {
+  background-image: url("https://picsum.photos/id/202/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(4) {
+  background-image: url("https://picsum.photos/id/203/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(5) {
+  background-image: url("https://picsum.photos/id/204/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(6) {
+  background-image: url("https://picsum.photos/id/205/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(7) {
+  background-image: url("https://picsum.photos/id/206/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(8) {
+  background-image: url("https://picsum.photos/id/207/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(9) {
+  background-image: url("https://picsum.photos/id/208/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(10) {
+  background-image: url("https://picsum.photos/id/209/500/500");
+}
+
+#art sectiontweaked divfinder:nth-of-type(11) {
+  background-image: url("https://picsum.photos/id/210/500/500");
 }
 
 @media (max-width: 900px) {
@@ -444,13 +517,8 @@ sectiontweaked divfinder:last-of-type {
     height: 1000px;
   }
 }
+        
 
-
-
-        
-        
-        
-        
 
 
 
@@ -968,114 +1036,100 @@ sectiontweaked divfinder:last-of-type {
                 <!-- Your new content goes here -->
                 <!-- It won't inherit styles from 'secondintro' or 'projectsection' -->
                 <div class="vertical-line4"></div>
-
-<divfinder class="openout"></divfinder>
-<divfinder class="imageclasser">   </divfinder>
-        <article>
-          <figure>
-            <figcaption>
-              <div class="aboutnext">
-                <h1>Electronics</h1>
-              </div>
-             
-              <p>
-                 I have had the opportunity <span>to work with and design</span> <span></span> many different electrical projects, ranging from personal ideas like a raspberry pi facial detection door opener, to 
-                 working on different engineering projects in a variety of clubs.
-              </p>
-            </figcaption>
-            <button>
-              <label for="init1">
-                <span>Designs</span>
-                <span>Collapse</span>
-              </label>
-              <input type="checkbox" name="init" id="init1">
-            </button>
-          </figure>
-          <sectiontweaked>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-          </sectiontweaked>
-        </article>
-
-        <article>
-          <figure>
-            <figcaption>
-              <div class="aboutnext">
-                 <h1>Culinary</h1>
-              </div>
-             
-              <p>
-                Throughout my life <span>I have enjoyed the amazing hobby of</span> <span>below</span> being able to cook for myself and others, when my dad first moved to America
-                he started his profession with spreading his skill for indonesian cuisine and asian foods. Throughout the years he taught me to do the same, and eventually got me the job of working as a sous chef alongside him.
-              </p>
-            </figcaption>
-            <button>
-              <label for="init2">
-                <span>Dishes</span>
-                <span>Collapse</span>
-              </label>
-              <input type="checkbox" name="init" id="init2">
-            </button>
-          </figure>
-          <sectiontweaked>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-          </sectiontweaked>
-        </article>
-        <article>
-          <figure>
-            <figcaption>
-              <div class="aboutnext">
-                <h1>Art</h1>
-             </div>
-             
-              <p>
-                I have always enjoyed <span>drawing and painting,</span> <span>below</span> I started to learn animation and storyboarding in my later years of highschool, and found a creative way to merge
-                this skill with engineering through technical drawing.
-              </p>
-            </figcaption>
-            <button>
-              <label for="init3">
-                <span>Drawings</span>
-                <span>Collapse</span>
-              </label>
-              <input type="checkbox" name="init" id="init3">
-            </button>
-          </figure>
-          <sectiontweaked>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-            <divfinder></divfinder>
-          </sectiontweaked>
-        </article>
-</divfinder>
-</divfinder>
+                <divfinder class="openout"></divfinder>
+                <divfinder class="imageclasser"></divfinder>
+                <article id="electronics">
+                  <figure>
+                    <figcaption>
+                      <h1>Electronics</h1>
+                      <p>
+                        Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
+                      </p>
+                    </figcaption>
+                    <button>
+                      <label for="init1">
+                        <span>Projects</span>
+                        <span>Collapse</span>
+                      </label>
+                      <input type="checkbox" name="init" id="init1">
+                    </button>
+                  </figure>
+                  <sectiontweaked>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                  </sectiontweaked>
+                </article>
+                
+                <article id="culinary">
+                  <figure>
+                    <figcaption>
+                      <h1>Culinary</h1>
+                      <p>
+                        Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
+                      </p>
+                    </figcaption>
+                    <button>
+                      <label for="init2">
+                        <span>Dishes</span>
+                        <span>Collapse</span>
+                      </label>
+                      <input type="checkbox" name="init" id="init2">
+                    </button>
+                  </figure>
+                  <sectiontweaked>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                  </sectiontweaked>
+                </article>
+                
+                <article id="art">
+                  <figure>
+                    <figcaption>
+                      <h1>Art</h1>
+                      <p>
+                        Use the button <span>to the right</span> <span>below</span> to open and close my gallery. You can hover over images to expand them. I wanted to save some vertical space and give users a fun interaction on my site so here it is. You could put multiple of these stacked on each other, as an idea.
+                      </p>
+                    </figcaption>
+                    <button>
+                      <label for="init3">
+                        <span>Drawings</span>
+                        <span>Collapse</span>
+                      </label>
+                      <input type="checkbox" name="init" id="init3">
+                    </button>
+                  </figure>
+                  <sectiontweaked>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                    <divfinder></divfinder>
+                  </sectiontweaked>
+                </article>
 
 
   <div class="expsection">
