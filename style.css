@@ -707,7 +707,164 @@ margin-bottom: 0.1em;
 }
 
 
+/* Lava lamp CSS  */
 
+  /* CSS Variables Scoped to Lava Lamp */
+  .my-lava-lamp {
+    --lamp: #000;
+    --shadow: #f3fe19;
+    --core: #797b2c;
+    --lava: #f1f129;
+    --lava-bg: radial-gradient(circle at 50% 50%, var(--core) 25%, var(--shadow));
+    position: relative;
+  }
+
+  /* Lava Lamp Styles */
+  .my-lava-lamp .lava-lamp {
+    --height: 400;
+    --width: 150;
+    height: calc(var(--height) * 1px);
+    width: calc(var(--width) * 1px);
+    position: relative;
+  }
+
+  .my-lava-lamp .lava-lamp::after {
+    content: '';
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    background: radial-gradient(circle at 50% 50%, var(--shadow), transparent 60%);
+    top: 45%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+
+  .my-lava-lamp .lava-lamp::before {
+    content: '';
+    height: 25%;
+    width: 300%;
+    border-radius: 100%;
+    background: radial-gradient(ellipse at 50% 50%, var(--shadow), transparent 60%);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.5;
+    filter: blur(10px);
+  }
+
+  .my-lava-lamp .lava-lamp__main {
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .my-lava-lamp .lava-lamp__main::after,
+  .my-lava-lamp .lava-lamp__main::before {
+    background: var(--lamp);
+    content: '';
+    height: 12%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .my-lava-lamp .lava-lamp__main::after {
+    top: 0;
+  }
+
+  .my-lava-lamp .lava-lamp__main::before {
+    bottom: 0;
+    height: 26%;
+  }
+
+  .my-lava-lamp .lava-lamp__glass {
+    background: var(--lava-bg);
+    border-radius: 50% / 10%;
+    overflow: hidden;
+    height: 70%;
+    left: 0;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .my-lava-lamp .lava-lamp__base {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0 0 50% 50% / 0 0 35% 35%;
+  }
+
+  .my-lava-lamp .lava-lamp__base::before {
+    content: '';
+    background: var(--lamp);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    top: -60%;
+    height: calc(var(--height) * 1px);
+    width: calc(var(--width) * 1px);
+  }
+
+  .my-lava-lamp .lava-lamp__lava {
+    border-radius: 50% / 10%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    filter: url('#goo-unique');
+  }
+
+  .my-lava-lamp .lava-lamp__lava svg {
+    height: 280px;
+    width: 150px;
+  }
+
+  .my-lava-lamp .blob {
+    animation-delay: calc(var(--delay) * 1s);
+    animation-direction: var(--direction);
+    animation-duration: calc(var(--speed) * 1s);
+    animation-iteration-count: infinite;
+    animation-name: blob-unique;
+    animation-timing-function: linear;
+    fill: var(--lava);
+    transform-box: fill-box;
+  }
+
+  .my-lava-lamp .blob--bottom,
+  .my-lava-lamp .blob--top {
+    animation: none;
+  }
+
+  .my-lava-lamp .blob--top {
+    animation: sway-unique 20s infinite linear;
+  }
+
+  /* Unique Keyframes to Avoid Conflicts */
+  @keyframes sway-unique {
+    50% {
+      transform: translate(50%, 0);
+    }
+  }
+
+  @keyframes blob-unique {
+    from {
+      transform: skew(calc(var(--skewX) * 1deg), calc(var(--skewY) * 1deg)) translate(0, 0);
+    }
+    to {
+      transform: skew(calc(var(--skewX) * 1deg), calc(var(--skewY) * 1deg))
+        translate(0, calc((400 + (var(--height) * 2)) * -1px));
+    }
+  }
 
 /*
   media queries for different device size requirments, small phone, 
@@ -767,7 +924,7 @@ margin-bottom: 0.1em;
    margin-left: 0px;
    width: 90px;
    
-   margin-top: 200px;
+   margin-top: 00px;
    margin-bottom: 50px;
    
 

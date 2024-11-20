@@ -1191,7 +1191,31 @@ figure:has(button input:checked) ~ sectiontweaked divfinder {
 
 
 
+
    
+</div>
+
+<div class="my-lava-lamp">
+  <div class="lava-lamp">
+    <div class="lava-lamp__main">
+      <div class="lava-lamp__glass">
+        <!-- Lava blobs will be inserted here -->
+      </div>
+    </div>
+    <div class="lava-lamp__base"></div>
+  </div>
+
+  <!-- SVG Filter for Gooey Effect -->
+  <svg style="position: absolute; left: 100%;">
+    <defs>
+      <filter id="goo-unique">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="BLUR"></feGaussianBlur>
+        <feColorMatrix in="BLUR" mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="GOO"></feColorMatrix>
+        <feBlend in="SourceGraphic" in2="GOO"></feBlend>
+      </filter>
+    </defs>
+  </svg>
 </div>
 <script>
     window.addEventListener('scroll', function() {
@@ -1453,7 +1477,77 @@ window.addEventListener("resize", resizeFunc);
     
     
 </script>
+<script>
+  (function() {
+    const height = 400;
+    const width = 150;
+    const inRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
+    function lava(amount) {
+      const lavaLampGlass = document.querySelector('.my-lava-lamp .lava-lamp__glass');
+      const lavaLampLava = document.createElement('div');
+      lavaLampLava.classList.add('lava-lamp__lava');
+
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(svgNS, 'svg');
+
+      // Top Ellipse Blob
+      const ellipseTop = document.createElementNS(svgNS, 'ellipse');
+      ellipseTop.setAttribute('class', 'blob blob--top');
+      ellipseTop.setAttribute('cx', '35');
+      ellipseTop.setAttribute('cy', '0');
+      ellipseTop.setAttribute('rx', '35');
+      ellipseTop.setAttribute('ry', '10');
+      svg.appendChild(ellipseTop);
+
+      // Bottom Ellipse Blob
+      const ellipseBottom = document.createElementNS(svgNS, 'ellipse');
+      ellipseBottom.setAttribute('class', 'blob blob--bottom');
+      ellipseBottom.setAttribute('cx', '75');
+      ellipseBottom.setAttribute('cy', '270');
+      ellipseBottom.setAttribute('rx', '75');
+      ellipseBottom.setAttribute('ry', '10');
+      svg.appendChild(ellipseBottom);
+
+      // Randomly Generated Circle Blobs
+      for (let i = 0; i < amount; i++) {
+        const speed = inRange(8, 50);
+        const delay = inRange(0, 10) - 10;
+        const heightValue = inRange(30, 100);
+        const skewX = inRange(0, 10) - 5;
+        const skewY = inRange(0, 10) - 5;
+        const x = inRange(0, 150);
+        const direction = Math.random() > 0.5 ? 'alternate' : 'alternate-reverse';
+
+        const circle = document.createElementNS(svgNS, 'circle');
+        circle.setAttribute('class', 'blob');
+        circle.setAttribute('r', heightValue / 2);
+        circle.setAttribute('cx', x);
+        circle.setAttribute('cy', '400');
+        circle.setAttribute('style', `
+          --skewX: ${skewX};
+          --skewY: ${skewY};
+          --height: ${heightValue};
+          --speed: ${speed};
+          --delay: ${delay};
+          --direction: ${direction};
+        `);
+        svg.appendChild(circle);
+      }
+
+      lavaLampLava.appendChild(svg);
+      lavaLampGlass.appendChild(lavaLampLava);
+    }
+
+    // Initialize Lava Lamp Blobs on DOM Content Loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      lava(3);
+      lava(4);
+      lava(2);
+      lava(1);
+    });
+  })();
+</script>
 <script>
 
 
