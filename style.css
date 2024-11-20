@@ -717,6 +717,9 @@ margin-bottom: 0.1em;
     --lava: #f1f129;
     --lava-bg: radial-gradient(circle at 50% 50%, var(--core) 25%, var(--shadow));
     position: relative;
+    margin-left: 50px;
+    padding-left: 50px;
+    
   }
 
   /* Lava Lamp Styles */
