@@ -515,7 +515,19 @@ margin-bottom: 0.1em;
   transition: height 0.3s ease-out; 
 
 }
- 
+.vertical-line5 {
+  width: 1.5px;
+  height: 600px; 
+  background-color: yellow;
+  z-index: 10;
+  
+  margin-left: 1035px;
+
+
+  
+  transition: height 0.3s ease-out; 
+
+}
 .horizontal-line {
    width: 1088px;
    height: 1.5px; 
