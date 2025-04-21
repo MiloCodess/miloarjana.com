@@ -517,7 +517,7 @@ margin-bottom: 0.1em;
 }
 .vertical-line5 {
   width: 1.5px;
-  height: 600px; 
+  height: 440px; 
   background-color: yellow;
   z-index: 10;
   
@@ -593,7 +593,7 @@ margin-bottom: 0.1em;
    color: white;
    
    
-   margin-top: 710px;
+   margin-top: 90px;
    
 
  }
@@ -897,6 +897,20 @@ margin-bottom: 0.1em;
    .titles{
      font-size: 30px;
    }
+   #electronics p {
+    font-size: 15px;
+
+  }
+  #electronics h1 {
+    font-size: 40px;
+  }
+  #culinary p {
+    font-size: 15px;
+  }
+  #art p {
+    font-size: 15px
+  }
+
 
 
    .maintext{
@@ -1005,6 +1019,17 @@ margin-bottom: 0.1em;
    .titles{
      font-size: 30px;
    }
+
+   #electronics p {
+    font-size: 15px;
+
+  }
+  #culinary p {
+    font-size: 15px;
+  }
+  #art p {
+    font-size: 15px
+  }
 
 
    .maintext{
@@ -1115,6 +1140,17 @@ margin-bottom: 0.1em;
     
 
    }
+
+   #electronics p {
+    font-size: 15px;
+
+  }
+  #culinary p {
+    font-size: 15px;
+  }
+  #art p {
+    font-size: 15px
+  }
    .secondintro{
      padding-left: 15px;
    }
@@ -1215,6 +1251,16 @@ margin-bottom: 0.1em;
     
 
    }
+   #electronics p {
+    font-size: 15px;
+
+  }
+  #culinary p {
+    font-size: 15px;
+  }
+  #art p {
+    font-size: 15px
+  }
    .secondintro{
      padding-left: 15px;
    }
@@ -1321,6 +1367,16 @@ margin-bottom: 0.1em;
     
 
    }
+   #electronics p {
+    font-size: 15px;
+
+  }
+  #culinary p {
+    font-size: 15px;
+  }
+  #art p {
+    font-size: 15px
+  }
    .secondintro{
      padding-left: 15px;
    }
