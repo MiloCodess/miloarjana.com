@@ -730,8 +730,12 @@ margin-bottom: 0.1em;
     --lava-bg: radial-gradient(circle at 50% 50%, var(--core) 25%, var(--shadow));
     position: relative;
     /*  padding and margin for lava lamp */
-    margin-left: 100px;
-    padding-left: 100px;
+    margin-left: 40px;
+    padding-left: 40px;
+    bottom: 0; 
+
+    
+   
   
     
   }
