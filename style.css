@@ -406,7 +406,7 @@ to {
  .introwhole {
      margin-top:0px;
      padding-top: 0px;
-     margin-bottom: 300px;
+     margin-bottom: 200px;
 
  display: flex;
  flex-direction: column;
@@ -732,6 +732,9 @@ margin-bottom: 0.1em;
     /*  padding and margin for lava lamp */
     margin-left: 40px;
     padding-left: 40px;
+    margin-top: 200px;
+    padding-top: 100px;
+    padding-bottom: -100px;
     bottom: 0; 
 
     
