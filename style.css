@@ -1485,9 +1485,78 @@ margin-bottom: 0.1em;
  }
 
 
+/*
+Boxes for contact info (Linkedin)
+*/
+ 
 
+
+/* Global box-sizing */
+.soc{
+  box-sizing: border-box;
+  background: var(--background);
+  font-size: 10px; /* Converted from 0.625em for rems */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* .ir styles */
+.ir {
+  display: block;
+  overflow: visible;
+  padding: 0 0 100%;
+  position: relative;
+  height: 0;
+  width: 50%;
+}
+
+.ir > * {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+
+/* .soc styles */
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 4.8rem;
+  text-align: center;
+  width: 110rem;
+  max-width: 50%;
+}
+
+.soc li {
+  display: inline-block;
+  margin: 1.2rem;
+}
+
+.soc a, .soc svg {
+  display: block;
+}
+
+.soc a {
+  height: 9.6rem;
+  width: 9.6rem;
+}
+
+/* Hover effect for icons */
+.soc a:hover svg {
+  border-radius: 50%;
+  fill: var(--background);
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
+}
  
- 
+
+.icon-17 svg { fill: hsl(60, 70%, 50%); }
+.icon-17:hover svg { background: hsl(60, 70%, 50%); }
  
 
 
